@@ -29,7 +29,7 @@ FEATURE_MAPPING = {
 @st.cache_resource
 def load_model():
     try:
-        model = joblib.load(r'C:\Users\fcy\my_model.pkl')  # Update with your model path
+        model = joblib.load('models/my_model.pkl')  # Update with your model path
         logger.success("Model loaded successfully")
         return model
     except FileNotFoundError:
